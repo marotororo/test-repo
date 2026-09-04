@@ -1,0 +1,173 @@
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>微分法について学ぼう</title>
+<script type="text/x-mathjax-config">  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</head>
+
+<body>
+<h1>微分法を学ぼう</h1>
+<p style="text-align: right"><a href="BV23029松木裕次郎_top.html"><font size="2">
+    トップページに戻る</font></a></p>
+<hr>
+
+<h2>MENU</h2>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;border-radius:;">
+	<ul>
+		<li><a href="BV23029松木裕次郎_3.html#微分最初">微分とは何か</a></li>
+		<li><a href="BV23029松木裕次郎_3.html#公式">
+        微分公式</a></li>
+        <li><a href="BV23029松木裕次郎_3.html#導関数">
+        初等関数の導関数
+        </a></li>
+	</ul>
+</div>
+
+<h2 id="微分最初">微分とは何か</h2>
+
+<div style="padding: 20px; margin-bottom: 10px; border: 2px solid #333333;border-radius: 10px;">
+	<font size="4">＜定義＞</font>
+	<br>
+	
+	$関数y=f(x)は区間Iで定義されているとし、a\in Iとする。$
+	<ol>
+
+		<li>$$ \lim_{ h \to 0 } \frac{f(a+h)-f(a)}{h}
+			=\displaystyle \lim_{x \to a} \frac{f(x)-f(a)}{x-a}$$
+
+			
+			が存在する（有限な値として定まる）とき
+			$f(x)が点a$のおいて<font color="red">微分可能</font>であるといい、この極限値を$f'(a)と表し、点aにおけるf(x)の$<font color="red">微分係数</font>という。
+	
+		</li>
+		<img src="C:\Users\YujiroMatsuki\OneDrive - 芝浦工業大学 教研テナント (SIC)\情報処理演習Ⅰ\課題\BV23029松木裕次郎_image_1.jpg"width="500"border="1">
+
+		<li>$$\displaystyle \lim_{x\to a-0} \frac{f(x)-f(a)}{x-a} ,\lim_{x\to a+0} \frac{f(x)-f(a)}{x-a}$$
+			$が存在するとき、それぞれf(x)は点aにおいて$
+			<font color="red">左微分可能、右微分可能</font>であるといい、これらの極限値をそれぞれ<font color="blue">$f'_- (a)、f'_+ (a)$</font>で表し、$f(x)$の<font color="red">左微分係数、右微分係数</font>という。
+
+		</li>
+
+	</ol>
+
+	<hr>
+	<font size="4">＜注意＞</font>
+	
+	$$f(x)が点aで微分可能\Longleftrightarrow f'_- (a)=f'_+ (a)$$
+</div>
+<p style="text-align: right"><a href="BV23029松木裕次郎_3.html"><font size="2">
+    このページのトップに戻る</font></a></p>
+
+
+<!--微分とは何かEND　微分公式START-->
+
+<h2 id="公式">微分公式</h2>
+<div style="padding: 20px; margin-bottom: 10px; border: 2px solid #333333;border-radius: 10px;">
+$f(x)$、$g(x)$は微分可能とする。このとき次式が成り立つ。
+<ol>
+	<li>$\{kf(x)\}'=k\{f'(x)\}$</li>
+	<li>$\{f(x)\pm g(x)\}'=f'(x)\pm g'(x)$</li>
+	<li>$\{f(x)g(x)\}=f'(x)g(x)+f(x)g'(x)$</li>
+		<li>$\left\{ \dfrac{f(x)}{g(x)} \right\}
+		=\dfrac{f'(x)g(x)-f(x)g'(x)}{\{ g(x)\}^2}$</li>
+
+</ol>
+</div>
+<p style="text-align: right"><a href="BV23029松木裕次郎_3.html"><font size="2">
+    このページのトップに戻る</font></a></p>
+
+
+<h2 id="導関数">初等関数の導関数</h2>
+
+
+<table>
+    <tr>
+        <td valign="top">
+            <div style="padding: 20px; margin-bottom: 10px; border: 2px solid #333333;">
+            <table border="0" width="200" cellpadding="10">
+                
+                <tr> 
+                    <td>$x^n$</td> 
+                    <td>$=$</td>
+                    <td>$nx^{n-1}$</td> 
+                    <td>$(n \in \mathbb{N})$</td> 
+                </tr>
+                <tr> 
+                    <td>$\sin x$</td> 
+                    <td>$=$</td>
+                    <td>$\cos x$</td> 
+                </tr>
+                <tr> 
+                    <td>$\cos x$</td>
+                    <td>$=$</td>
+                    <td>$-\sin x$</td>
+                </tr>
+                <tr>
+                    <td>$\tan x$</td>
+                    <td>$=$</td>
+                    <td>$\dfrac{1}{\cos ^2x}$</td>
+                </tr>
+                <tr> 
+                    <td>$\log x$</td> 
+                    <td>$=$</td>
+                    <td>$\dfrac{1}{x}$</td> 
+                </tr>
+                <tr> 
+                    <td>$e^x$</td> 
+                    <td>$=$</td>
+                    <td>$e^x$</td> 
+                </tr>
+            </table>
+        </div>
+        </td>
+        <td valign="top">
+             <div style="padding: 20px; margin-bottom: 10px; border: 2px solid #333333;">
+            <table border="0" width="200" cellpadding="10">＜逆三角関数の導関数＞
+                <tr>
+                    <td>$\sin ^{-1}x$</td>
+                    <td>$=$</td>
+                    <td>$\dfrac{1}{\sqrt{1-x^2}}$</td>
+                    <td>$(-1 \lt x \lt 1) $</td>
+                </tr>
+                <tr>
+                    <td>$\cos ^{-1}x$</td>
+                    <td>$=$</td>
+                    <td>$- \dfrac{1}{\sqrt{1-x^2}}$</td>
+                    <td>$(-1 \lt x \lt 1) $</td>
+                </tr>
+                <tr>
+                    <td>$\tan ^{-1} x$</td>
+                    <td>$=$</td>
+                    <td>$\dfrac{1}{1+x^2}$</td>
+                    <td>$(-\infty \lt x \lt \infty) $</td>
+                </tr>
+
+            </table>
+        </div>
+        </td>
+    </tr>
+</table>
+
+<p style="text-align: right"><a href="BV23029松木裕次郎_3.html"><font size="2">
+    このページのトップに戻る</font></a></p>
+
+
+
+
+
+<hr><!--END END-->
+<font size="2">
+<li>
+    <a href="BV23029松木裕次郎_top.html"><font size="2">
+	トップページに戻る</a>
+</li>
+<li>
+    <a href="BV23029松木裕次郎_2.html">"積分法を学ぼう"のページに進む</a>
+</li>
+</font>
+</body>
+</html>
